@@ -1,0 +1,291 @@
+@charset "utf-8";
+
+.wrap{
+    width: 1200px;
+    margin: 0 auto;
+    position: relative;
+}
+/* header 영역 */
+.header{
+    width: 100%;
+    height: 100px;
+    /* background-color: lightblue; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo{
+    width: 200px;
+}
+
+.logo a{
+    display: block;
+}
+
+.logo a img{
+    width: 100%;
+}
+
+.nav{
+    align-self: self-end;
+}
+
+.main{
+    display: flex;
+    width: 100%;
+    height: 50px;
+    text-align: center;
+    z-index: 7;
+    margin-right: 20px;
+
+}
+
+.main > li{
+    position: relative;
+}
+
+.main > li > a{
+    display: block;
+    width: 150px;
+    height: 50px;
+    line-height: 50px;
+    background-color: green;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    
+}
+
+.main > li:hover > a{
+    background-color: darkseagreen;
+    color: black;
+}
+
+.sub{
+    position: absolute;
+    width: 100%;
+    top: 50px;
+    left: 0;
+    z-index: 5;
+    display: none;
+}
+
+.sub li{
+}
+
+.sub li a{
+    display: block;
+    width: 100%;
+    height: 50px;
+    line-height: 50px;
+    background-color: darkolivegreen;
+    font-weight: bold;
+    color: white;
+}
+
+.sub li:hover a{
+    background-color: darkgreen;
+}
+
+.sub_bg{
+    z-index: 2;
+    width: 1200px;
+    height: 150px;
+    background-color: darkslategray;
+    position: absolute;
+    left: 0;
+    top: 100px;
+    display: none;
+}
+
+
+/* slide 영역 */
+.slide{
+    width: 100%;
+    height: 300px;
+    background-color: lightcoral;
+    position: relative;
+    overflow: hidden;
+}
+
+.move{
+    width: 300%;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.move li{
+    float: left;
+}
+
+.move li a{}
+
+.move li a img{}
+
+
+
+/* cont 영역 */
+.contents{
+    width: 100%;
+    height: 200px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.contents div{
+    height: 200px;
+    width: 390px;
+    /* background-color: lightslategray; */
+}
+
+.contents h3{
+    width: 100px;
+    height: 40px;
+    background-color: green;
+    color: white;
+    text-align: center;
+    line-height: 40px;
+    border: 3px solid green;
+    margin-left: 20px;
+}
+
+.contents ul, .contents p{
+    width: 100%;
+    height: 165px;
+    border-top: 3px solid green;
+}
+
+.notice{}
+
+.notice ul{
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.notice ul li{
+    display: flex;
+    justify-content: space-between;
+}
+
+.notice ul li a{
+    width: 75%;
+    text-overflow: ellipsis;
+    text-wrap: nowrap;
+    overflow: hidden;
+}
+
+.notice ul li a:hover{
+    text-decoration: underline;
+}
+
+.notice ul li span{}
+
+.gallery{}
+
+.gallery ul{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.gallery ul li{}
+
+.gallery ul li a{}
+
+.gallery ul li a img{}
+
+.gallery ul li a:hover img{
+    transform: scale(1.2);
+}
+
+.banner{}
+
+.banner p{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.banner p a{}
+
+.banner p a img{}
+
+.banner p a:hover img{
+    filter: sepia();
+}
+
+
+/* footer 영역 */
+.footer{
+    width: 100%;
+    height: 100px;
+    /* background-color: lightskyblue; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px dotted black;
+    border-top: 1px dotted black;
+
+}
+
+.f_logo{
+}
+
+.f_copy{
+    border-left: 1px dotted black;
+    border-right: 1px dotted black;
+    width: 600px;
+    text-align: center;
+}
+
+.f_family{
+}
+
+.f_family select{
+    height: 30px;
+}
+
+.modal{
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0,0,0,0.8);
+    position: absolute;
+    left: 0;
+    top: 0;
+    display: none;
+    z-index: 50;
+}
+
+.pop{
+    width: 300px;
+    height: 400px;
+    background-color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    border: 3px solid green;
+    padding: 20px;
+    display: none;
+    z-index: 51;
+}
+
+.pop p{
+    line-height: 2;
+    text-align: left;
+}
+
+.pop button{
+    width: 100%;
+    height: 30px;
+    margin-top: 120px;
+    cursor: pointer;
+    
+}
+
+
+
